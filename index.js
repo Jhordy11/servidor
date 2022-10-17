@@ -4,10 +4,12 @@ const express = require("express");
 const Pokedex = require("./rutas/pokedex");
 const Gif = require("./rutas/gif");
 const Weather = require("./rutas/weather");
-
+const cors = require('cors')
 const app = express();
 const PORT = process.env.PORT;
 
+
+app.use(cors({origin:true}))
 app.use(Weather)
 app.use(Pokedex);
 app.use(Gif);
