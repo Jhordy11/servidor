@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT;
 
 
-app.use(cors({origin:true}))
+app.use(cors({origin:"https://cliente-ten.vercel.app/"}))
 app.use(Weather)
 app.use(Pokedex);
 app.use(Gif);
