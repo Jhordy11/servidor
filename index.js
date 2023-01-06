@@ -13,7 +13,7 @@ app.use(cors({origin:"https://cliente-ten.vercel.app"}))
 app.use(Weather)
 app.use(Pokedex);
 app.use(Gif);
-app.get("/api", (req, res) => {
+app.get("/", (req, res) => {
   
   res.send("hola");
 });
